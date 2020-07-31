@@ -17,7 +17,12 @@ export class LocalService {
     }
 
     getItem(key: string) {
-        return localStorage.getItem(key);
+        const data = localStorage.getItem(key);
+        try {
+            return JSON.parse(data);
+        } catch (error) {
+            return data;
+        }
     }
 
     clear() {
