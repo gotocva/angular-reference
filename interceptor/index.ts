@@ -1,5 +1,5 @@
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { DefaultInterceptor } from './DefaultInterceptor';
+import { DefaultInterceptor } from './default-interceptor';
 
 /** Http interceptor providers in outside-in order */
 export const httpInterceptorProviders = [ 
