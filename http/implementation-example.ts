@@ -1,5 +1,3 @@
-
-
 import { ResponseInterface } from "../../shared/http/response-interface";
 export class Users extends ResponseInterface {
     name: string;
